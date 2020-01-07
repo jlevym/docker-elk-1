@@ -3,7 +3,7 @@ version: '2'
 services:
   elasticsearch:
     image: elasticsearch:7.5.1
-    command: elasticsearch -Des.network.host=0.0.0.0
+    #command: elasticsearch -Ees.network.host=0.0.0.0
     restart: unless-stopped
     volumes:
       - ./esdata:/usr/share/elasticsearch/data:Z
